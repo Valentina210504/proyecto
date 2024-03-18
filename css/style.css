@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,29 @@
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+/* aca se modifican las variables y se les da el color que quresmos para definir */
+:root {
+    /* color del fondo */
+    --color_text-primary: #9b23ca;
+    /* color seguncario = texto */
+    --color_text-secundary: #101E2C;
+    /* color de boton quote */
+    --color_text-tertiary: #4a0864;
+    --main_color-primary: #4a0864;
+    --main_color-secundary: #974fb4;
+    --background-color: #8c759edc;
+    --lowText_font_size: 16px;
+    /* tamaño titulo */
+    --text_size_title: 40px;
+    --text_size_card: 24px;
+    --text_size_cardv2: 20px;
+    /* son para el tamaño de letra de parrafo */
+    --text_paragraph: 16px;
+    /* para el borde  */
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
+}
+
+header {
     /* width al 100% es todo el header,height se acomoda en lo ancho pero es fijo */
     width: 100%;
     height: 100px;
@@ -18,7 +40,7 @@ header{
     z-index: 100;
 }
 
-.container_header{
+.container_header {
     max-width: 1200px;
     height: 100%;
     margin: auto;
@@ -38,69 +60,146 @@ header{
     z-index: 1;
 }
 
-.logo img{
-    width: 200px;
+.logo img {
+    width: 100px;
+
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
 
-.menu nav{
+.menu nav {
     margin: 0px 20px;
 }
 
-.menu nav ul{
+.menu nav ul {
     display: flex;
 }
 
-.menu nav ul li{
+.menu nav ul li {
     list-style: none;
     margin: 20px 16px;
 }
 
-.menu nav ul li a{
-    color: black; 
-    /* Variable var (--color_text-secundary); */
-    font-size: 16px;
-    /* Variable var (--lowText_font_size);*/
+.menu nav ul li a {
+    /* se coloco el nombre de la variable que se inicializo arriba */
+    color: var(--color_text-secundary);
+    font-size: var(--lowText_font_size);
     position: relative;
 }
 
-.menu nav ul li a:hover{
-    color: #800080;
+.menu nav ul li a:hover {
+    color: var(--color_text-primary);
     /* Variable var (--color_text-primary); */
 }
 
-.btn_quote{
+.btn_quote {
     /* display: block = es decir que el display ira en bloques */
     display: block;
     padding: 8px 40px;
-    border: 2px solid #800080;
+    border: 2px solid var(--color_text-primary);
     /* Variable var (--color_text-primary); */
     border-radius: 8px;
     font-weight: 500;
-    color: #4a0864;
+    color: var(--color_text-tertiary);
     /* Variable var (--color_text-tertiary); */
     margin: 0px 20px;
     transition: all 300ms;
 }
 
 /* hover = cada vez que se pasa por el boton se coloca el color seleccionado */
-.btn_quote:hover{
+.btn_quote:hover {
     color: white;
-    background: #800080;
+    background: var(--color_text-primary);
 }
 
-.menu .socialMedia{
-    margin: 0px 10px ;
+.menu .socialMedia {
+    margin: 0px 10px;
 }
 
-.menu .socialMedia a{
+.menu .socialMedia a {
     margin: 0px 4px;
 }
 
-.menu .socialMedia  {
-    
+/* agarra las imagenes de social media  */
+.menu .socialMedia img {
+    width: 20px;
 }
+
+/* end header */
+/* portada inicio */
+
+.container_cover {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color);
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    /* separar contenedor abajo */
+    margin-top: 100px;
+    /* felixiblidad en el contenedor */
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover {
+    width: 100%;
+    padding-right: 150px;
+}
+
+/* texto del titulo */
+.text_cover h1{
+    font-size: 50px;
+    color: var(--color_text-secundary);
+}
+
+/* texto del parrafo */
+.text_cover p{
+    font-size: var(--text_paragraph);
+    /* separar el encabezado con el parrafo */
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.btn_text{
+    /* el boton que se mueva se bloque, que todas sus propiedades se muevan en conjunto*/
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    /* separa adentro texto de lo que lo contiene */
+    padding: 10px 20px;
+    text-align: center;
+    /* grosor de la fuente 500 */
+    font-weight: 500;
+    background: var(--main_color-primary);
+    /* color del texto */
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    /* cuando doy click en la propiedad sale la mano  */
+    cursor: pointer;
+    transition: all 300ms; 
+}
+
+/* para cuando paso por el boton se vuelve transparente  */
+.btn_text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-tertiary);
+}
+
+ .image_cover{
+    width: 100%;
+ }
+
+ .image_cover img{
+     width: 550px;
+ }
+
+ /* end portada de inicio */
