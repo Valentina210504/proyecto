@@ -10,20 +10,20 @@
 
 /* aca se modifican las variables y se les da el color que quresmos para definir */
 :root {
-    /* color del fondo */
-    --color_text-primary: #9b23ca;
+    /* color del fondo de texto*/
+    --color_text-primary: #8b4513;
     /* color seguncario = texto */
     --color_text-secundary: #101E2C;
     /* color de boton quote */
-    --color_text-tertiary: #4a0864;
-    --main_color-primary: #4a0864;
-    --main_color-secundary: #974fb4;
-    --background-color: #8c759edc;
+    --color_text-tertiary: #000000;
+    --main_color-primary: #8b4513;
+    --main_color-secundary: #a86e2a;
+    --background-color: #d2b48c;
     --lowText_font_size: 16px;
     /* tamaño titulo */
     --text_size_title: 40px;
-    --text_size_card: 24px;
-    --text_size_cardv2: 20px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
     /* son para el tamaño de letra de parrafo */
     --text_paragraph: 16px;
     /* para el borde  */
@@ -41,13 +41,15 @@ header {
 }
 
 .container_header {
-    max-width: 1200px;
+    max-width: 1200px; 
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    /* estp era transparene */
+    background-color: transparent;
     /* 2 = arriba y abajo -- izquierd y derecha */
     /* 4 = arriba,abajo,derecha e izquierda  */
     /* top= arriba botton = abajo */
@@ -203,3 +205,96 @@ header {
  }
 
  /* end portada de inicio */
+
+/*Estilos Generales Cards*/
+
+.container_card-primary{
+    padding-top: 100px;
+}
+
+/* centro los iconos  */
+.card_primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+/* cambio el color del titulo "genera confianza primero" */
+.text_card-primary p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_card-primary h1{
+    font-size: var(--text_size_title);
+    /* grosor de la letra */
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* hace la caja de texto numero 1 */
+.box_card-primary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+/* hace que cuando el puntero apunta a la caja de texto esta se mueva y se ilumnie */
+.box_card-primary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+/* dio tamaño image */
+.box_card-primary img{
+    width: 100px;
+}
+
+.box_card-primary h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_card-primary p{
+    margin-top: 20px;
+
+}
+
+/* saber mas */
+
+.image_saber img {
+    border-radius: 20px;
+}
+.imagen1 img{
+width: 500px;
+height: 200px;
+margin-right: 40px;
+
+}
+.imagen2 img{
+    width: 500px;
+    height: 200px;
+    margin-left: 500px;
+    padding-bottom: 300px;
+}
+
+
