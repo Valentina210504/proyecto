@@ -36,12 +36,13 @@ header {
     height: 100px;
     /* position :fixed = Fija el encabezado en la parte superior de la ventana del navegador, de modo que permanezca visible incluso al desplazarse por la página. */
     position: fixed;
+
     /* z-index=Establece la posición en el eje Z del encabezado */
     z-index: 100;
 }
 
 .container_header {
-    max-width: 1200px; 
+    max-width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -49,7 +50,7 @@ header {
     align-items: center;
     padding: 0px 20px;
     /* estp era transparene */
-    background-color: transparent;
+    background-color: var(--background-color);
     /* 2 = arriba y abajo -- izquierd y derecha */
     /* 4 = arriba,abajo,derecha e izquierda  */
     /* top= arriba botton = abajo */
@@ -156,20 +157,20 @@ header {
 }
 
 /* texto del titulo */
-.text_cover h1{
+.text_cover h1 {
     font-size: 50px;
     color: var(--color_text-secundary);
 }
 
 /* texto del parrafo */
-.text_cover p{
+.text_cover p {
     font-size: var(--text_paragraph);
     /* separar el encabezado con el parrafo */
     margin-top: 40px;
     color: var(--color_text-tertiary);
 }
 
-.btn_text{
+.btn_text {
     /* el boton que se mueva se bloque, que todas sus propiedades se muevan en conjunto*/
     display: block;
     width: 150px;
@@ -186,61 +187,63 @@ header {
     border: 2px solid transparent;
     /* cuando doy click en la propiedad sale la mano  */
     cursor: pointer;
-    transition: all 300ms; 
+    transition: all 300ms;
 }
 
 /* para cuando paso por el boton se vuelve transparente  */
-.btn_text:hover{
+.btn_text:hover {
     background: transparent;
     border: 2px solid var(--main_color-primary);
     color: var(--color_text-tertiary);
 }
 
- .image_cover{
+.image_cover {
     width: 100%;
- }
+}
 
- .image_cover img{
-     width: 550px;
- }
+.image_cover img {
+    width: 550px;
+}
 
- /* end portada de inicio */
+/* end portada de inicio */
 
 /*Estilos Generales Cards*/
 
-.container_card-primary{
+.container_card-primary {
     padding-top: 100px;
 }
 
 /* centro los iconos  */
-.card_primary{
+.card_primary {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text_card-primary{
+.text_card-primary {
     max-width: 800px;
     margin: auto;
 }
 
 /* cambio el color del titulo "genera confianza primero" */
-.text_card-primary p{
+.text_card-primary p {
     color: var(--color_text-primary);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
 }
 
-.text_card-primary h1{
+.text_card-primary h1 {
     font-size: var(--text_size_title);
     /* grosor de la letra */
     font-weight: 600;
     color: var(--color_text-secundary);
 }
 
-.container_box-cardPrimary{
+/* <!-- GENERADOR DE CONFIANZA --> */
+
+.container_box-cardPrimary {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -248,7 +251,7 @@ header {
 }
 
 /* hace la caja de texto numero 1 */
-.box_card-primary{
+.box_card-primary {
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
@@ -258,23 +261,23 @@ header {
 }
 
 /* hace que cuando el puntero apunta a la caja de texto esta se mueva y se ilumnie */
-.box_card-primary:hover{
+.box_card-primary:hover {
     border: 1px solid transparent;
     box-shadow: var(--box_shadow-primary);
 }
 
 /* dio tamaño image */
-.box_card-primary img{
+.box_card-primary img {
     width: 100px;
 }
 
-.box_card-primary h2{
+.box_card-primary h2 {
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
 
-.box_card-primary p{
+.box_card-primary p {
     margin-top: 20px;
 
 }
@@ -284,17 +287,88 @@ header {
 .image_saber img {
     border-radius: 20px;
 }
-.imagen1 img{
-width: 500px;
-height: 200px;
-margin-right: 40px;
+
+.imagen1 img {
+    width: 500px;
+    height: 200px;
+    margin-right: 40px;
 
 }
-.imagen2 img{
+
+.imagen2 img {
     width: 500px;
     height: 200px;
     margin-left: 500px;
     padding-bottom: 300px;
 }
 
+/* contenedor doble */
 
+.container_cover_2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #e0bc8f67;
+}
+
+.cover_2 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover_2 {
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text_cover_2 h1 {
+    font-size: 50px;
+    color: var(--background-color);
+}
+
+.text_cover_2 p {
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--background-color);
+}
+
+.image_cover {
+    width: 100%;
+}
+
+.image_cover_1 img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.image_cover_2 img {
+    width: 340px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+/* fin contenedor doble */
+/* icono de servicios */
+.my-arrow {
+    font-size: 24px;
+    color: #43aa13d7;
+    padding-top: 30px;
+}
+
+.box_card-primary_2 {
+    background-image: url(https://www.mirringo.com.co/Portals/mirringo/contenidos/mitos-y-verdades-esterilizar-gato/banner-interna-cirugia.jpg?ver=2021-06-18-121103-920);
+    border-radius: 15px;
+    padding: 60px 40px;
+    border: 1px solid #000000;
+    margin: 14px;
+    transition: all 300ms;
+    height: 500px;
+    width: 400px;
+}
+
+.box_card-primary_2:hover {
+    border: 2px solid #a86e2a;
+}
