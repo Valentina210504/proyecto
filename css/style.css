@@ -13,12 +13,13 @@
     /* color del fondo de texto*/
     --color_text-primary: #8b4513;
     /* color seguncario = texto */
-    --color_text-secundary: #101E2C;
+    --color_text-secundary: #311f09e9;
     /* color de boton quote */
-    --color_text-tertiary: #000000;
+    --color_text-tertiary: #0e0d0de4;
     --main_color-primary: #8b4513;
     --main_color-secundary: #a86e2a;
     --background-color: #d2b48c;
+    --background-color2:#e0bc8f67;
     --lowText_font_size: 16px;
     /* tamaño titulo */
     --text_size_title: 40px;
@@ -302,12 +303,12 @@ header {
     padding-bottom: 300px;
 }
 
-/* contenedor doble */
+/* contenedor doble imagen */
 
 .container_cover_2 {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #e0bc8f67;
+    background-color: var(--background-color2);
 }
 
 .cover_2 {
@@ -326,13 +327,13 @@ header {
 
 .text_cover_2 h1 {
     font-size: 50px;
-    color: var(--background-color);
+    color: var(--color_text-secundary);
 }
 
 .text_cover_2 p {
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    color: var(--background-color);
+    color: var(--color_text-tertiary);
 }
 
 .image_cover {
@@ -358,8 +359,70 @@ header {
     padding-top: 30px;
 }
 
-.box_card-primary_2 {
-    background-image: url(https://www.mirringo.com.co/Portals/mirringo/contenidos/mitos-y-verdades-esterilizar-gato/banner-interna-cirugia.jpg?ver=2021-06-18-121103-920);
+
+/* <!-- contenedor proyectos --> */
+.card__primary_3{
+    background-color: var(--background-color-2);
+}
+
+.text__card-primary_3 {
+    max-width: 800px;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.text__card-primary_3 p {
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+    text-align: center;
+}
+
+.text__card-primary_3 h1 {
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--background-color);
+    text-align: center;
+}
+
+.container__box-cardPrimary_3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary_3 {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary_3:hover {
+    border: 20px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary_3 h2 {
+    font-size: var(--text_title_card);
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--color_text-secundary);
+}
+
+.box__card-primary_3 p {
+    color: var(--color_text-secundary);
+    margin-top: 20px;
+}
+
+.box__card-primary_3 {
+    background-image: url(https://www.mirringo.com.co/Portals/mirringo/EasyDNNNews/1895/850526p2425EDNthumbimg-banner-interna-cirugia1.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 15px;
     padding: 60px 40px;
     border: 1px solid #000000;
@@ -369,6 +432,191 @@ header {
     width: 400px;
 }
 
-.box_card-primary_2:hover {
-    border: 2px solid #a86e2a;
+.box__card-primary_4 {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
 }
+
+.box__card-primary_4:hover {
+    border: 20px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary_4 h2 {
+    font-size: var(--text_title_card);
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--color_text-secundary);
+}
+
+.box__card-primary_4 p {
+    color: var(--color_text-secundary);
+    margin-top: 20px;
+}
+
+.box__card-primary_4 {
+    background-image: url(https://www.mirringo.com.co/Portals/mirringo/articulos-mirringo-panama/conoce-las-ventajas-y-desventajas-de-la-esterilizacion-de-tu-gato/15Oct-Banner-Interna-P-compressed.jpg?ver=2023-02-18-111024-033);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 60px 40px;
+    border: 1px solid #000000;
+    margin: 14px;
+    transition: all 300ms;
+    height: 500px;
+    width: 400px;
+}
+
+.box__card-primary_5 {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary_5:hover {
+    border: 20px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary_5 h2 {
+    font-size: var(--text_title_card);
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--color_text-secundary);
+}
+
+.box__card-primary_5 p {
+    color: var(--color_text-secundary);
+    margin-top: 20px;
+}
+
+.box__card-primary_5 {
+    background-image: url(https://images.hola.com/imagenes/seleccion/20220323206738/mejores-dispensadores-comida-gato/1-220-329/dispensador-gatos-t.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 60px 40px;
+    border: 1px solid #000000;
+    margin: 14px;
+    transition: all 300ms;
+    height: 500px;
+    width: 400px;
+}
+
+/* fin contenedor proyectos */
+
+/* sobre nosotros */
+
+.sobre_nosotros {
+    width: 100%;
+    padding-bottom: 900px;
+    background-color: white;
+}
+.integrante{
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+}
+
+.titulo h1 {
+
+    color: black;
+    letter-spacing: 4px;
+    margin-top: 60px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.integrante {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px rgba(0, 0, 0, 19);
+    float: left;
+    width: 350px;
+    margin-left: 60px;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+.integrante img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px 40px 0 0;
+}
+
+.integrante:hover {
+    border: 4px solid var(--color_text-primary);
+    transform: rotate(-3deg);
+}
+
+.texto {
+    text-align: center;
+    text-shadow:  var(--color_text-tertiary);
+    padding: 10%;
+}
+
+/* fin sobre nosotros */
+
+/* <!-- inicio pie de pagina --> */
+.pie-de-pagina {
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.pie-de-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box_Logo figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .grupo-1 .box_Logo figure img {
+    width: 250px;
+}
+
+.pie-de-pagina .grupo-1 .box h2 {
+    color: var(--color_text-tertiary);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .grupo-1 .box p {
+    color: var(--color_text-tertiary);
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina .grupo-1 .box img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.pie-de-pagina .grupo-2 {
+    background-color: var(--background-color);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--color_text-tertiary);
+}
+
+.pie-de-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* fin pie de pagina */
