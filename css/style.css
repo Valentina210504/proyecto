@@ -564,6 +564,112 @@ header {
 
 /* fin sobre nosotros */
 
+/* inicio mapa */
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    background-color: var(--background-color-2);
+}
+
+.container-fluid p {
+    padding-top: 80px;
+    text-align: center;
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.container-fluid h1 {
+    text-align: center;
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--background-color);
+    padding-bottom: 40px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group .btn{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: 2px solid var(--main_color-primary);
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--background-color);
+    transition: all 300ms;
+    text-align: center;
+} 
+
+.form-group a:hover {
+    background-color: var(--main_color-primary);
+    color: var(--color_text-tertiary);
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    max-width: 600px;
+    padding-bottom: 40px;
+}
+
+.form-and-map-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-and-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .map {
+        max-width: 100%;
+    }
+}
+/* fin mapa  */
+
 /* <!-- inicio pie de pagina --> */
 .pie-de-pagina {
     width: 100%;
