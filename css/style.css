@@ -19,7 +19,7 @@
     --main_color-primary: #8b4513;
     --main_color-secundary: #a86e2a;
     --background-color: #d2b48c;
-    --background-color2:#e0bc8f67;
+    --background-color2: #e0bc8f67;
     --lowText_font_size: 16px;
     /* tamaño titulo */
     --text_size_title: 40px;
@@ -44,29 +44,34 @@ header {
 
 .container_header {
     max-width: 1200px;
+    /*organiza los ul y el logo */
     height: 100%;
     margin: auto;
+    /* centra elementos horizontmlente*/
     display: flex;
+    /*crear diseños web flexibles y responsivos, proporcionando un control detallado sobre la alineación, el espaciado y el tamaño de los elementos dentro de un contenedor.*/
     justify-content: space-between;
+    /* se utiliza dentro de un contenedor flex para distribuir los elementos hijos de manera que haya un espacio igual entre ellos. */
     align-items: center;
+    /*alinear todos los elementos flexibles en el centro */
     padding: 0px 20px;
-    /* estp era transparene */
+    /* esto era transparene */
     background-color: var(--background-color);
     /* 2 = arriba y abajo -- izquierd y derecha */
     /* 4 = arriba,abajo,derecha e izquierda  */
-    /* top= arriba botton = abajo */
+    /* top= arriba, botton = abajo */
 }
 
 .logo {
     display: flex;
     align-items: center;
     position: relative;
+    /* l posicionamiento de elementos, permitiendo desplazamientos controlados sin alterar el flujo normal del documento */
     z-index: 1;
 }
 
 .logo img {
     width: 100px;
-
 }
 
 .menu {
@@ -76,6 +81,7 @@ header {
 
 .menu nav {
     margin: 0px 20px;
+    /* arriba,derecha,abajo,izquierda */
 }
 
 .menu nav ul {
@@ -84,6 +90,7 @@ header {
 
 .menu nav ul li {
     list-style: none;
+    /* elimina las viñetas*/
     margin: 20px 16px;
 }
 
@@ -104,13 +111,15 @@ header {
     display: block;
     padding: 8px 40px;
     border: 2px solid var(--color_text-primary);
-    /* Variable var (--color_text-primary); */
+    /* borde 2px el solid el color del borde*/
     border-radius: 8px;
     font-weight: 500;
+    /* especificar el grosor o el peso de la fuente del texto.*/
     color: var(--color_text-tertiary);
-    /* Variable var (--color_text-tertiary); */
     margin: 0px 20px;
     transition: all 300ms;
+    /*animaciones suaves entre los cambios de estado de un elemento*/
+
 }
 
 /* hover = cada vez que se pasa por el boton se coloca el color seleccionado */
@@ -127,12 +136,12 @@ header {
     margin: 0px 4px;
 }
 
-/* agarra las imagenes de social media  */
 .menu .socialMedia img {
     width: 20px;
 }
 
 /* end header */
+
 /* portada inicio */
 
 .container_cover {
@@ -143,11 +152,12 @@ header {
 
 .cover {
     max-width: 1200px;
+    /* el ancho máximo que un elemento puede tener. */
     margin: auto;
-    /* separar contenedor abajo */
     margin-top: 100px;
-    /* felixiblidad en el contenedor */
+    /* separar contenedor abajo */
     display: flex;
+     /* felixiblidad en el contenedor */
     align-items: center;
     padding: 0px 20px;
 }
@@ -166,8 +176,8 @@ header {
 /* texto del parrafo */
 .text_cover p {
     font-size: var(--text_paragraph);
-    /* separar el encabezado con el parrafo */
     margin-top: 40px;
+    /* separar el encabezado con el parrafo */
     color: var(--color_text-tertiary);
 }
 
@@ -176,10 +186,9 @@ header {
     display: block;
     width: 150px;
     margin-top: 40px;
-    /* separa adentro texto de lo que lo contiene */
     padding: 10px 20px;
+     /* separa adentro texto de lo que lo contiene */
     text-align: center;
-    /* grosor de la fuente 500 */
     font-weight: 500;
     background: var(--main_color-primary);
     /* color del texto */
@@ -208,7 +217,7 @@ header {
 
 /* end portada de inicio */
 
-/*Estilos Generales Cards*/
+/*Estilos Generador de confianza Cards*/
 
 .container_card-primary {
     padding-top: 100px;
@@ -361,7 +370,7 @@ header {
 
 
 /* <!-- contenedor proyectos --> */
-.card__primary_3{
+.card__primary_3 {
     background-color: var(--background-color-2);
 }
 
@@ -519,7 +528,8 @@ header {
     padding-bottom: 900px;
     background-color: white;
 }
-.integrante{
+
+.integrante {
     width: 100%;
     background-color: rgb(217, 217, 217);
 }
@@ -558,13 +568,14 @@ header {
 
 .texto {
     text-align: center;
-    text-shadow:  var(--color_text-tertiary);
+    text-shadow: var(--color_text-tertiary);
     padding: 10%;
 }
 
 /* fin sobre nosotros */
 
-/* inicio mapa */
+/* Formulario de Dudas */
+
 .container-fluid {
     width: 100%;
     padding: 20px;
@@ -589,10 +600,33 @@ header {
     padding-bottom: 40px;
 }
 
+.form-and-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
 .contact-form {
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 40px;
+    max-width: 50%;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .row {
@@ -603,11 +637,12 @@ header {
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    padding-left: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
-    margin-left: 10px;
+    padding-left: 20px;
 }
 
 .form-group label {
@@ -625,7 +660,7 @@ header {
     box-sizing: border-box;
 }
 
-.form-group .btn{
+.form-group .btn {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -634,8 +669,7 @@ header {
     font-weight: 500;
     color: var(--background-color);
     transition: all 300ms;
-    text-align: center;
-} 
+}
 
 .form-group a:hover {
     background-color: var(--main_color-primary);
@@ -643,32 +677,25 @@ header {
 }
 
 .map {
-    width: 100%;
-    height: 400px;
-    max-width: 600px;
-    padding-bottom: 40px;
-}
-
-.form-and-map-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width: 100vw;
+    height: 700px;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .form-and-map-container {
+    .form-and-image-container {
         flex-direction: column;
         align-items: center;
     }
 
     .contact-form,
-    .map {
+    .image-container {
         max-width: 100%;
     }
 }
-/* fin mapa  */
+
+/* Final Formulario de Dudas */
 
 /* <!-- inicio pie de pagina --> */
 .pie-de-pagina {

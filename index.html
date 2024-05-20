@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- codigo de texto,nos codifica los imbolos extraños -->
+    <!-- codigo de texto,nos codifica los simbolos extraños -->
     <meta charset="UTF-8">
     <!-- se utiliza para especificar la versión de Internet Explorer que se debe utilizar para renderizar una página web. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     <header>
         <!-- Header - Container -->
         <div class="container_header">
-            <!-- Logo -->
+            <!-- inicio Logo -->
             <div class="logo">
                 <a href="#">
                     <img src="img/logo/logo.png" alt="No se enocontro la ruta de la imagen">
@@ -39,9 +39,9 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <!-- End menu -->
                 <!-- Button -->
                 <a href="#" class="btn_quote">Quote</a>
+                <!-- inicio social media  -->
                 <div class="socialMedia">
                     <a href="#">
                         <img src="img/social_media/facebook.png" alt="No se enocontro la ruta de la imagen">
@@ -70,6 +70,7 @@
         <!-- portada de inicio -->
         <div class="container_cover div_offset">
             <div class="cover">
+                <!-- inicio section -->
                 <section class="text_cover">
                     <h1>Rinconcito Felino</h1>
                     <p>Bienvenido a "Rinconcito Felino", tu destino en línea para el cuidado integral de tu preciado
@@ -79,6 +80,7 @@
                     <a href="#" class="btn_text-cover btn_text">Empezar</a>
                 </section>
                 <!-- end section -->
+                <!-- inicio section -->
                 <section class="image_cover">
                     <img src="img/cover/hero.webp" alt="">
                 </section>
@@ -88,6 +90,7 @@
         </div>
         <!-- end div -->
         <!-- end portada de inicio -->
+        
         <!-- GENERADOR DE CONFIANZA -->
         <div class="container_trust container_card-primary">
             <div class="trust card_primary">
@@ -251,11 +254,11 @@
 
         <!-- fin sobre nosotros -->
 
-         <!-- inicio del mapa  -->
-         <div class="container-fluid">
+        <!-- inicio del mapa  -->
+        <div class="container-fluid">
             <p>CONTACTANOS</p>
-            <h1>Tienes alguna duda escribenos</h1>
-            <div class="form-and-map-container">
+            <h1>Tienes alguna duda escríbenos</h1>
+            <div class="form-and-image-container">
                 <section class="contact-form">
                     <form>
                         <div class="row">
@@ -287,16 +290,25 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
                             <a href="#" class="btn">Enviar</a>
                         </div>
                     </form>
                 </section>
-                <section class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15344.496922533328!2d-73.352005815636!3d8.249800885994745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1714961544067!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="image-container">
+                    <img src="img/cover/servicio.jpg" alt="" />
                 </section>
             </div>
-        </div>
-         <!-- fin del mapa -->
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15344.496922533328!2d-73.352005815636!3d8.249800885994745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1714961544067!5m2!1ses-419!2sco"
+                    width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+        <!-- fin del mapa -->
 
         <!-- inicio pie de pagina -->
         <footer class="pie-de-pagina">
