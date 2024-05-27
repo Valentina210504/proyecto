@@ -530,11 +530,19 @@ header {
 
 /* sobre nosotros */
 
+
 .sobre_nosotros {
     width: 100%;
-    padding-bottom: 900px;
+    padding-bottom: 100px;
     background-color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
 }
+
+
 
 .integrante {
     width: 100%;
@@ -553,7 +561,7 @@ header {
 
 }
 .sobre_nosotros .contenedor{
-    padding-left: 300px;
+    margin: auto;
 }
 
 .integrante {
