@@ -11,7 +11,7 @@
 /* aca se modifican las variables y se les da el color que quresmos para definir */
 :root {
     /* color del fondo de texto*/
-    --color_text-primary: #8b4513;
+    --color_text-primary: #a94c09;
     /* color seguncario = texto */
     --color_text-secundary: #311f09e9;
     /* color de boton quote */
@@ -19,7 +19,7 @@
     --main_color-primary: #8b4513;
     --main_color-secundary: #a86e2a;
     --background-color: #d2b48c;
-    --background-color2: #e0bc8f67;
+    --background-color2: #8d704f63;
     --lowText_font_size: 16px;
     /* tamaño titulo */
     --text_size_title: 40px;
@@ -27,6 +27,7 @@
     --text_title_cardv2: 20px;
     /* son para el tamaño de letra de parrafo */
     --text_paragraph: 16px;
+    --font-primary: Lucida;
     /* para el borde  */
     --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
 }
@@ -37,13 +38,11 @@ header {
     height: 100px;
     /* position :fixed = Fija el encabezado en la parte superior de la ventana del navegador, de modo que permanezca visible incluso al desplazarse por la página. */
     position: fixed;
-
     /* z-index=Establece la posición en el eje Z del encabezado */
     z-index: 100;
 }
 
 .container_header {
-    max-width: 1200px;
     /*organiza los ul y el logo */
     height: 100%;
     margin: auto;
@@ -64,6 +63,9 @@ header {
 
 .logo {
     display: flex;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     position: relative;
     /* l posicionamiento de elementos, permitiendo desplazamientos controlados sin alterar el flujo normal del documento */
@@ -77,6 +79,7 @@ header {
 .menu {
     display: flex;
     align-items: center;
+    padding-right: 120px;
 }
 
 .menu nav {
@@ -157,7 +160,7 @@ header {
     margin-top: 100px;
     /* separar contenedor abajo */
     display: flex;
-     /* felixiblidad en el contenedor */
+    /* felixiblidad en el contenedor */
     align-items: center;
     padding: 0px 20px;
 }
@@ -187,7 +190,7 @@ header {
     width: 150px;
     margin-top: 40px;
     padding: 10px 20px;
-     /* separa adentro texto de lo que lo contiene */
+    /* separa adentro texto de lo que lo contiene */
     text-align: center;
     font-weight: 500;
     background: var(--main_color-primary);
@@ -258,6 +261,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
+    padding-bottom: 20px;
 }
 
 /* hace la caja de texto numero 1 */
@@ -269,6 +273,7 @@ header {
     margin: 14px;
     transition: all 300ms;
 }
+
 
 /* hace que cuando el puntero apunta a la caja de texto esta se mueva y se ilumnie */
 .box_card-primary:hover {
@@ -285,11 +290,11 @@ header {
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
+    
 }
 
 .box_card-primary p {
     margin-top: 20px;
-
 }
 
 /* saber mas */
@@ -315,7 +320,7 @@ header {
 /* contenedor doble imagen */
 
 .container_cover_2 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     background-color: var(--background-color2);
 }
@@ -371,13 +376,14 @@ header {
 
 /* <!-- contenedor proyectos --> */
 .card__primary_3 {
-    background-color: var(--background-color-2);
+    background-color: var(--background-color2);
 }
 
 .text__card-primary_3 {
     max-width: 800px;
     padding-top: 100px;
     margin: auto;
+    
 }
 
 .text__card-primary_3 p {
@@ -399,7 +405,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .box__card-primary_3 {
@@ -580,7 +587,7 @@ header {
     width: 100%;
     padding: 20px;
     justify-content: center;
-    background-color: var(--background-color-2);
+    background-color: var(--background-color2);
 }
 
 .container-fluid p {
@@ -698,12 +705,13 @@ header {
 /* Final Formulario de Dudas */
 
 /* <!-- inicio pie de pagina --> */
-.pie-de-pagina {
+.pie {
     width: 100%;
     background-color: var(--background-color);
 }
 
-.pie-de-pagina .grupo-1 {
+
+.pie .contenedor_pie {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -713,43 +721,77 @@ header {
     padding: 45px 0px;
 }
 
-.pie-de-pagina .grupo-1 .box_Logo figure {
+.pie .contenedor_pie .Logo figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 200px;
+    padding-right: 200px;
+
 }
 
-.pie-de-pagina .grupo-1 .box_Logo figure img {
-    width: 250px;
+.pie .contenedor_pie .Logo img {
+    width: 150px;
 }
 
-.pie-de-pagina .grupo-1 .box h2 {
-    color: var(--color_text-tertiary);
-    margin-bottom: 25px;
-    font-size: 20px;
-}
 
-.pie-de-pagina .grupo-1 .box p {
-    color: var(--color_text-tertiary);
-    margin-bottom: 10px;
-}
-
-.pie-de-pagina .grupo-1 .box img {
-    height: 30px;
-    margin-right: 10px;
-}
-
-.pie-de-pagina .grupo-2 {
+.pie .contenedor_pie .copy {
     background-color: var(--background-color);
-    padding: 15px 10px;
-    text-align: center;
+    text-align: left;
     color: var(--color_text-tertiary);
 }
 
-.pie-de-pagina .grupo-2 small {
+.pie .contenedor_pie .copy small {
     font-size: 15px;
+}
+
+
+.pie .contenedor_pie .redes_sociales img {
+    height: 30px;
+    align-items: center;
+}
+
+.pie .contenedor_pie .contact {
+    margin: 0;
+}
+
+.pie .contenedor_pie .contact h1 {
+    color: var(--color_text-secundary);
+    font-family : var(--font-primary);
+    text-decoration: var(--text_paragraph);
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+.pie .contenedor_pie.contact h5 {
+    color: var(--color_text-secundary);
+    font-family : var(--font-primary);
+}
+
+.pie .contenedor_pie.enlaces {
+    margin-left: 300px;
+    max-width: 1200px;
+}
+
+.pie  .enlaces h1 {
+    color: var(--color_text-secundary);
+    font-family:var(--font-primary);
+    text-decoration: var(--text_paragraph);
+}
+
+.pie .enlaces a {
+    color: var(--color_text-tertiary);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+.pie .enlaces a:hover {
+    color: var(--color_text-primary);
+    transition: 10ms;
 }
 
 /* fin pie de pagina */
