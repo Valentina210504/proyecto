@@ -539,6 +539,7 @@ header {
 .integrante {
     width: 100%;
     background-color: rgb(217, 217, 217);
+    
 }
 
 .titulo h1 {
@@ -550,6 +551,9 @@ header {
     font-weight: 500;
     text-align: center;
 
+}
+.sobre_nosotros .contenedor{
+    padding-left: 300px;
 }
 
 .integrante {
@@ -674,13 +678,14 @@ header {
     border: 2px solid var(--main_color-primary);
     border-radius: 8px;
     font-weight: 500;
-    color: var(--background-color);
+    color: var(--color_text-secundary);
     transition: all 300ms;
+    text-align: center;
 }
 
 .form-group a:hover {
-    background-color: var(--main_color-primary);
-    color: var(--color_text-tertiary);
+    background-color: var(--background-color2);
+    color: var(--color_text-primary);
 }
 
 .map {
